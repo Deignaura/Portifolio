@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio - Deignaura</title>
+  <meta name="description" content="Portfólio de projetos — Desenvolvedor(a) web" />
+  <!-- Favicon (coloque sua imagem em ./favicon.png) -->
+  <link rel="icon" href="imagem.png" />
+
+  <!-- Google fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href ="style.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="avatar">
+  <img src="foto_compactada.png" alt="Foto de perfil" style="width:100%;height:100%;border-radius:12px;object-fit:cover;">
+</div>
+
+          <div>
+            <h1>Deignaura Ribeiro</h1>
+            <div class="muted">Desenvolvedor(a) de Software • Engenharia de Software</div>
+          </div>
+        </div>
+
+        <nav aria-label="navegação principal">
+          <a href="#about">Sobre</a>
+          <a href="#projects">Projetos</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#contact">Contato</a>
+        </nav>
+
+        <div class="flex gap">
+          <button id="themeToggle" title="Alternar tema" aria-pressed="false" style="background:transparent;border:0;font-weight:700">🌙</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="intro">
+            <h2>Olá — eu sou <strong>Deignaura</strong></h2>
+            <p>Sou estudante de Engenharia de Software e desenvolvedora apaixonada por criar aplicações limpas e funcionais. Aqui estão alguns dos meus projetos e habilidades.</p>
+            <div class="cta">
+              <a class="btn" href="#projects">Ver projetos</a>
+              <a class="btn secondary" href="#contact">Entrar em contato</a>
+            </div>
+
+            <div style="margin-top:20px" class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div class="muted">Procurando por</div>
+                  <div style="font-weight:700">Estágio / Projeto freelancer</div>
+                </div>
+                <div style="text-align:right">
+                  <div class="muted">Localização</div>
+                  <div style="font-weight:700">Belo Horizonte • Coluna</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card">
+            <h3>Contato rápido</h3>
+            <p class="muted">Email</p>
+            <p style="font-weight:700">deignauragoncalvesribeiro123@gmail.com</p>
+            <hr style="margin:12px 0;border:none;border-top:1px dashed #eef2f7" />
+            <p class="muted">LinkedIn / GitHub</p>
+            <p><a href="#">linkedin.com/in/DeignauraRibeiro</a><br><a href="#">github.com/Deignaura</a></p>
+          </aside>
+        </section>
+
+        <section id="about" style="margin-top:18px">
+          <div class="card">
+            <h3>Sobre mim</h3>
+            <p class="muted">Breve descrição — Engenheira de Software</p>
+            <p style="margin-top:10px">Ex: Estudante de Engenharia de Software, com experiência em C, C++ e JavaScript. Gosto de construir soluções que melhorem a vida das pessoas e estudar boas práticas de programação.</p>
+          </div>
+        </section>
+
+        <section id="projects" style="margin-top:18px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h3>Projetos</h3>
+            <div class="muted">Clique em visualizar para ver mais</div>
+          </div>
+
+          <div class="projects">
+            <!-- Projeto 1 -->
+            <article class="project card">
+              <h3>Projeto Serena (Exemplo)</h3>
+              <p>Uma aplicação web para gerenciamento de tarefas com autenticação e persistência local. Tecnologias: HTML, CSS, JavaScript.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div style="margin-top:12px;display:flex;gap:8px">
+                <a class="btn" href="#">Ver demo</a>
+                <a class="btn secondary" href="#">Código</a>
+              </div>
+            </article>
+
+            <!-- Projeto 2 -->
+            <article class="project card">
+              <h3>Simulador de Voo (C++)</h3>
+              <p>Projeto acadêmico implementado em C++ — simula trajetórias simples e permite visualização dos estados.</p>
+              <div class="tags">
+                <span class="tag">C++</span>
+                <span class="tag">Algoritmos</span>
+              </div>
+              <div style="margin-top:12px;display:flex;gap:8px">
+                <a class="btn" href="#">Documentação</a>
+                <a class="btn secondary" href="#">Código</a>
+              </div>
+            </article>
+
+            <!-- Projeto 3 -->
+            <article class="project card">
+              <h3>Blog Pessoal</h3>
+              <p>Site estático com posts escritos por você, usando HTML/CSS e hospedado gratuitamente.</p>
+              <div class="tags">
+                <span class="tag">Web</span>
+                <span class="tag">Design</span>
+              </div>
+              <div style="margin-top:12px;display:flex;gap:8px">
+                <a class="btn" href="#">Ver site</a>
+                <a class="btn secondary" href="#">Código</a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section id="skills" style="margin-top:18px">
+          <div class="card">
+            <h3>Habilidades</h3>
+            <div class="skills" style="margin-top:10px">
+              <span class="skill">C/C++</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">HTML & CSS</span>
+              <span class="skill">Git</span>
+              <span class="skill">Design UI</span>
+              <span class="skill">Inglês — Conversação</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" style="margin-top:18px">
+          <div class="card">
+            <h3>Contato</h3>
+            <p class="muted">Preencha o formulário ou envie um email diretamente.</p>
+
+            <form id="contactForm" onsubmit="return false">
+              <input type="text" id="name" placeholder="Seu nome" required />
+              <input type="email" id="email" placeholder="seu.email@exemplo.com" required />
+              <textarea id="message" placeholder="Mensagem" required></textarea>
+              <div style="display:flex;gap:8px;align-items:center">
+                <button id="sendBtn" class="btn" type="submit">Enviar</button>
+                <div id="formStatus" class="muted"> </div>
+              </div>
+            </form>
+
+          </div>
+        </section>
+
+      </main>
+
+      <footer style="margin-top:18px;text-align:center">
+        <div class="muted">© <span id="year"></span> Seu Nome — Feito com ❤️</div>
+      </footer>
+
+    </div>
+  </div>
+  <link rel="stylesheet" href="script.js">
+
+    
+</body>
+</html>
